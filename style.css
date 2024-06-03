@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.first{
+    display: flex;
+    justify-content: center;
+}
+.jumbotron{
+    height: 100vh !important;
+}
+
+.color{
+    animation: changeColor 6s ease-in 1s 2 alternate-reverse;
+}
+
+@keyframes changeColor {
+    0%{
+        background-color: red;
+        padding-left: 50px;
+        color: white;
+    }
+    30%{
+        background-color: green;
+
+        color: black;
+        
+    }
+    60%{
+        background-color: yellow;
+        color: black;
+        
+    }
+    90%{
+        background-color: peru;
+        color: white;
+
+    }
+}
+
+@media screen and (max-width : 650px) {
+    .first{
+        display: inline;
+        margin: auto;
+    }
+}
